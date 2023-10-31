@@ -1,0 +1,85 @@
+:root {
+  --color-primary: red;
+  --color-white: #ffffff;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  background-color: red;
+}
+
+.btn-1 {
+  margin-right: 10px;
+}
+
+.box-container {
+  background-color: #fff000;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.box-child {
+  background-color: var(--color-primary);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+}
+
+.box {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* width: fit-content;
+  height: fit-content; */
+  margin: auto;
+}
+
+button {
+}
+
+.btn {
+}
+
+#btn-one {
+}
+
+.progress {
+  width: 500px;
+  height: 5px;
+  background-color: #919191;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  background-color: red;
+}
